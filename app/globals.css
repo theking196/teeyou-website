@@ -1421,3 +1421,261 @@ ul {
     font-size: 2rem;
   }
 }
+
+/* About Page */
+.about-page {
+  padding-top: 70px;
+  background: #fafafa;
+}
+
+.about-hero {
+  background: linear-gradient(135deg, #1a1a1a, #000);
+  padding: 80px 0;
+  text-align: center;
+  border-bottom: 2px solid #d4af37;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.about-hero p {
+  color: #d4af37;
+  font-size: 1.3rem;
+}
+
+.about-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.section-label {
+  display: inline-block;
+  background: #1a1a1a;
+  color: #d4af37;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.story-content h2 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 25px;
+}
+
+.story-content p {
+  color: #666;
+  line-height: 1.9;
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+}
+
+.story-image .image-placeholder {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(135deg, #1a1a1a, #000);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  border: 2px solid #d4af37;
+}
+
+/* Mission Section */
+.mission-section {
+  padding: 80px 0;
+  background: #f5f5f5;
+}
+
+.mission-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mission-content h2 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.mission-content > p {
+  color: #666;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.mission-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.value-item {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #eee;
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.value-item h4 {
+  color: #1a1a1a;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.value-item p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Faith Section */
+.faith-section {
+  padding: 100px 0;
+  background: #1a1a1a;
+}
+
+.faith-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.faith-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.faith-content h2 {
+  color: #d4af37;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.verse {
+  color: #fff;
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.reference {
+  color: #d4af37;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.faith-message {
+  color: #999;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 80px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+.cta-section > p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cta-buttons .btn-primary {
+  padding: 15px 35px;
+  background: #1a1a1a;
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta-buttons .btn-primary:hover {
+  background: #d4af37;
+  color: #1a1a1a;
+}
+
+.cta-buttons .btn-outline {
+  padding: 15px 35px;
+  border: 2px solid #1a1a1a;
+  color: #1a1a1a;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta-buttons .btn-outline:hover {
+  background: #1a1a1a;
+  color: #d4af37;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .story-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .mission-values {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .story-content h2,
+  .mission-content h2,
+  .faith-content h2,
+  .cta-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
