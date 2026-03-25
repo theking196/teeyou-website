@@ -1923,3 +1923,58 @@ ul {
     padding: 25px;
   }
 }
+
+/* Contact Page v2 */
+.contact-page .hero {
+  background: linear-gradient(135deg, #1a1a1a, #000);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.contact-page .hero h1 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.contact-page .hero p {
+  color: #d4af37;
+}
+
+.contact-page .content {
+  padding: 50px 0;
+}
+
+.contact-page .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.contact-page .card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid #eee;
+}
+
+.contact-page .card h3 {
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.contact-page .card p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.contact-page .card a {
+  color: #d4af37;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .contact-page .grid {
+    grid-template-columns: 1fr;
+  }
+}
